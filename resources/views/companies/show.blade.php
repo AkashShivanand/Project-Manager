@@ -30,7 +30,7 @@
                 <div class="p-3">
                     <h4>Options</h4>
                     <ol class="list-unstyled mb-0">
-                        <li><a href="#">Edit</a></li>
+                    <li><a href="/companies/{{ $company->id }}/edit">Edit</a></li>
                         <li><a href="#">Delete</a></li>
                         <li><a href="#">Add new member</a></li>
                     </ol>

@@ -72,6 +72,9 @@
             </div>
         </nav>
 
+        @include('partials.errors')
+        @include('partials.success')
+
         <main class="py-4">
             @yield('content')
         </main>
