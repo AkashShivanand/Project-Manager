@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Project_Manager'),
+    'name' => env('APP_NAME', 'Project Manager'),
 
     /*
     |--------------------------------------------------------------------------
