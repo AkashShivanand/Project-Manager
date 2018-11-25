@@ -31,17 +31,29 @@
                     <h4>Options</h4>
                     <ol class="list-unstyled mb-0">
                     <li><a href="/companies/{{ $company->id }}/edit">Edit</a></li>
-                        <li><a href="#">Delete</a></li>
-                        <li><a href="#">Add new member</a></li>
+                    <li><a href="/projects/create">Add Project</a></li>
+                    <hr>
+                    <li>
+                        <a href="#"
+                            onclick="
+                                var result = confirm('Are you sure you wish to delete this company?');
+                                if(result) {
+                                    event.preventDefault();
+                                    document.getElementById('delete-form').submit();
+                                }
+                            ">Delete
+                        </a>
+
+                        <form id="delete-form"
+                            action="{{ route('companies.destroy', [$company->id]) }}"
+                            method="POST"
+                            style="display:none;">
+                            <input type="hidden" name="_method" value="delete" />
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
                     </ol>
                 </div>
-
-            {{-- <div class="p-3">
-                <h4 class="font-italic">Members</h4>
-                <ol class="list-unstyled">
-                    <li><a href="#">User 1</a></li>
-                </ol>
-            </div> --}}
             </aside>
         </div>
     </div> <!-- /container -->
