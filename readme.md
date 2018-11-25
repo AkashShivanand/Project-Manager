@@ -4,7 +4,7 @@
 [![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-6C488A.svg)](https://gitlab.com/AkashShivanand/project-manager)
 [![Repo on BitBucket](https://img.shields.io/badge/repo-BitBucket-1F5081.svg)](https://bitbucket.org/AkashShivanand/project-manager)
 
-## About Laravel
+## About Project Manager
 
 It's a Project Manager App developed using Laravel Framework.
 
