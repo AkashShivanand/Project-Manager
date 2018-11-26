@@ -4,7 +4,8 @@
 <div class="container">
     <div class="card" style="width: 18rem;">
         <div class="card-header bg-success">
-        Companies
+            Companies
+            <a class="btn btn-primary float-right" href="/companies/create">Add new company</a>
         </div>
         <ul class="list-group list-group-flush">
         @foreach ($companies as $company)
